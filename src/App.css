@@ -1,38 +1,401 @@
-.App {
+@font-face {
+  font-family:Gilroy-Light; /* Гарнитура шрифта */
+  src: url(font/giloryLight.otf); /* Путь к файлу со шрифтом */
+ }
+ @font-face {
+  font-family:Gilroy-Regular; /* Гарнитура шрифта */
+  src: url(font/gilroy-regular.ttf); /* Путь к файлу со шрифтом */
+ }
+ @font-face {
+  font-family:Gilroy-ExtraBold; /* Гарнитура шрифта */
+  src: url(font/ofont.ru_Gilroy.ttf); /* Путь к файлу со шрифтом */
+ }
+.app{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  width: 1024px;
+  height: 768px;
+  background-image: url(img/bg1.png);
+  position: absolute;
+}
+.content{
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 25px;
+  position: absolute;
+}
+.homeButton{
+  font-size: 14px;
+  font-family: "DINPro";
+  color: rgb(36, 36, 36);
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 7;
+  padding-bottom: 130px;
+  word-spacing: 20px;
+}
+.mainContentHello {
+  font-size: 23px;
+  letter-spacing:3px;
+  font-family: "DINPro";
+  color: rgb(36, 36, 36);
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 7;
+}
+.mainContentText{
+  padding-top: 20px;
+  font-size: 90px;
+  letter-spacing:11px;
+  font-family: "Gilroy-Light";
+  color: rgb(23, 23, 23);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  z-index: 6;
+}
+.extraBold{
+  font-family:"Gilroy-ExtraBold";
+}
+.mainContentButton{
+  border-radius: 50px;
+  background: linear-gradient(to right, #ff8db5, #ff6a9f);
+  font-size: 25px;
+  padding: 20px;
+  margin-left: 30px;
+  margin-top: 17px;
+  font-family: "Gilroy-Regular";
+  position: absolute;
+  
+  z-index: 8;
+  border:0;
+}
+.mainContentButtonPointer{
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(244, 186, 207, 0.95) inset;
+  -moz-box-shadow: 0px 0px 5px 2px rgba(244, 186, 207, 0.95) inset;
+  box-shadow: 0px 0px 5px 2px rgba(244, 186, 207, 0.95) inset;
+  font-size: 30px;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  color:white;
   text-align: center;
+  background-color: black;
+  z-index: 9;
+  position: absolute;
+}
+.mainContentButtonText{
+  margin-left: 50px;
+}
+.label{
+  position: absolute;
+  font-size: 14px;
+  left: 70px;
+  top: 734px;
+  width: 114px;
+  height: 24px;
+  z-index: 98;
+}
+.bakti_1 {
+  background-image: url("./img/bakti_111.png");
+  position: absolute;
+  left: 23px;
+  top: 503px;
+  width: 73px;
+  height: 71px;
+  z-index: 4;
+}
+.pink_sperm {
+  background-image: url("./img/pink_sperm.png");
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  position: absolute;
+  top: 587px;
+  width: 413px;
+  height: 183px;
+  z-index: 5;
+}
+.pink_sperm_1 {
+  background-image: url("./img/pink_sperm_1.png");
+  position: absolute;
+  left: 432px;
+  top: 155px;
+  width: 592px;
+  height: 93px;
+  z-index: 11;
+}
+.blueBaktiFirst {
+  background-image: url("./img/bluebakti1.png");
+  position: absolute;
+  left: 347px;
+  top: 631px;
+  width: 85px;
+  height: 77px;
+}
+.blueBaktiSecond {
+  background-image: url("./img/bluebakti1.png");
+  position: absolute;
+  left: 917px;
+  top: 30px;
+  width: 85px;
+  height: 77px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blueBaktiLong {
+  background-image: url("./img//bluebakti12.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -1px;
+  top: 72px;
+  width: 214px;
+  height: 115px;
+  z-index: 16;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.blueBaktiMove {
+  background-image: url("./img/animbluebakti.png");
+  position: absolute;
+  left: 745px;
+  top: 61px;
+  width: 63px;
+  height: 57px;
+  z-index: 15;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation: AnimationBlueBaktiMove 15s infinite ease-in-out;
+  animation: AnimationBlueBaktiMove 15s infinite ease-in-out;
+}
+
+.blueBaktiSize {
+  background-image: url("./img/animbluebaktisize.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 542px;
+  top: 641px;
+  width: 227px;
+  height: 224px;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation: AnimationBlueBaktiSize 10s infinite ease-in-out;
+  animation: AnimationBlueBaktiSize 10s infinite ease-in-out;
+}
+
+.blueBaktiMove2 {
+  background-image: url("./img/animbluebakti2.png");
+  position: absolute;
+  left: 662px;
+  top: 200px;
+  width: 110px;
+  height: 113px;
+  z-index: 17;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation: AnimationBlueBaktiMove2 15s infinite ease-in-out;
+  animation: AnimationBlueBaktiMove2 15s infinite ease-in-out;
+}
+.prokrutka {
+  height: 450px; /* высота нашего блока */
+  width: 773px; /* ширина нашего блока */
+  background: #fff; /* цвет фона, белый */
+  border: 1px solid #C1C1C1; /* размер и цвет границы блока */
+  overflow-x: scroll; /* прокрутка по горизонтали */
+  font-size: 25px;
+  font-family: "DINPro";
+  color: rgb(36, 36, 36);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 141px;
+  top: 240px;
+  border-radius: 30px;
+  padding: 20px;
+  z-index: 99;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .pinkSpermSecondPage1{
+    background-image: url("./img/pink_sperm_page24.png");
+    background-repeat: no-repeat;
+      position: absolute;
+      left: 300px;
+      top: 10px;
+      width: 730px;
+      height: 342px;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation: AnimationBlueSpermMove 3s;
+      animation: AnimationBlueSpermMove 3s ;
   }
-  to {
-    transform: rotate(360deg);
+  .pinkSpermSecondPage2 {
+    background-image: url("./img/pink_sperm_page25.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -90px;
+    top: 100px;
+    width: 1141px;
+    height: 731px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation: AnimationBlueSpermMove 3s;
+    animation: AnimationBlueSpermMove 3s ;
+    z-index: 1;
   }
+  .pinkSpermSecondPage3{
+    background-image: url("./img/pink_sperm_page24.png");
+    background-repeat: no-repeat;
+      position: absolute;
+      left: 200px;
+      top: 60px;
+      width: 1141px;
+      height: 531px;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation: AnimationBlueSpermMove 3s;
+      animation: AnimationBlueSpermMove 3s ;
+  }
+  .pinkSpermSecondPage4{
+    background-image: url("./img/pink_sperm_page24.png");
+    background-repeat: no-repeat;
+      position: absolute;
+      left: 550px;
+      top: 560px;
+      width: 1141px;
+      height: 531px;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation: AnimationBlueSpermMove 3s;
+      animation: AnimationBlueSpermMove 3s ;
+  }
+  .pinkSpermSecondPage5{
+    background-image: url("./img/pink_sperm_page24.png");
+    background-repeat: no-repeat;
+      position: absolute;
+      left: 520px;
+      top: 460px;
+      width: 1141px;
+      height: 531px;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation: AnimationBlueSpermMove 3s;
+      animation: AnimationBlueSpermMove 3s ;
+  }
+  @-webkit-keyframes AnimationBlueSpermMove {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    100% {
+      transform: translate(55%, 100%);
+    }
+  
+  }
+  @keyframes AnimationBlueSpermMove {
+    0% {
+    transform: translate(55%, 100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+  }  
+
+@-webkit-keyframes AnimationBlueBaktiMove {
+  0% {
+    transform: translate(55%, 100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+
+}
+@keyframes AnimationBlueBaktiMove {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(55%, 100%);
+  }
+
+}
+
+@-webkit-keyframes AnimationBlueBaktiMove2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(-55%, -100%);
+  }
+
+}
+@keyframes AnimationBlueBaktiMove2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(-55%, -100%);
+  }
+
+}
+
+
+@-webkit-keyframes AnimationBlueBaktiSize {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.5)
+  }
+
+}
+@keyframes AnimationBlueBaktiSize {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.5)
+  }
+
+} 
+  /* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  height: 0px; /* высота для горизонтального скролла */
+  background: black; /* Цвет скроллбара */
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background: #E87D0D; /* Цвет ползунка скроллбара */
+  border-radius: 7em; /* Закругление углов ползунка скроллбара */
+  box-shadow: inset 2px 1px 7px #d3149a; /* Тень ползунка */
+}
+
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background:
+      linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background:
+      linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background:
+      linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
 }
