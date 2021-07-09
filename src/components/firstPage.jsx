@@ -2,7 +2,7 @@ import {Link } from 'react-router-dom';
 import React from 'react';
 
 
-function FirstPage(){
+function One(){
 return( 
 <div className="mainContent">
 <div className="mainContentHello">
@@ -28,4 +28,4 @@ return(
 </div>
 )
 }
-export default FirstPage;
+export default One;

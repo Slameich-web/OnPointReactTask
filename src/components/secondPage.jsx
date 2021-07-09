@@ -1,7 +1,10 @@
+import {Link } from 'react-router-dom';
+import React from 'react';
+
 function SecondPage(){
     return(
         <div className="mainContent">
-            <div className="mainContentHello">
+            <div className="mainContentTextSecondPage">
                 ТЕКСТ<br/>
                 СООБЩЕНИЯ
             </div>
@@ -31,6 +34,9 @@ function SecondPage(){
                     https://ru.wikipedia.org/wiki/сперматозоид
                 </div>
             </div>
+            <Link to="/third"><button className="mainContentButton2"><span className="mainContentButtonPointer2">
+                &#8594;
+            </span><span className="mainContentButtonText">Что дальше?</span></button></Link>
             <div className="pinkSpermSecondPage1"></div>
             <div className="pinkSpermSecondPage2"></div>
             <div className="pinkSpermSecondPage3"></div>
