@@ -6,16 +6,14 @@ import bubbles2 from "../img/bubbles2.png"
 import bubbles4 from "../img/bubbles4.png"
 import {Link } from 'react-router-dom';
 import React from 'react';
+import Popup from "./popup"
 
 function ThirdPage(){
-    function manageHTML(){
-
-    }
     return(
         <div className="mainContent">
             <div className="mainContentTextThirdPage">
                 <p className="thirdPageLabel2">КЛЮЧЕВОЕ СООБЩЕНИЕ</p>
-                <p className="thirdPageLabel">BRENDXY</p>
+                <p className="thirdPageLabel">BREND<span className="thirdPageLabelBold">XY</span></p>
             </div>
             <div className="thirdPageTextBlock1">
                 
@@ -41,14 +39,7 @@ function ThirdPage(){
             <img src={bubbles4} className="bubbleblue11"/>
             <img src={bubbles4} className="bubbleblue12"/>
             <img src={bubbles4} className="bubbleblue13"/>
-            <div id="popup" className="popup">
-                <a href="#" className="popupArea"></a>
-                <div className="popupBody">
-                    <div className="popupContent">
-                        <a href="#" className="popupClose">&#10006;</a>
-                    </div>
-                </div>
-            </div>
+            <Popup/>
         </div>
     )
 }
